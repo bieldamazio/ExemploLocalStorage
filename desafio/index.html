@@ -1,0 +1,59 @@
+<!-- Enunciado
+
+Criar uma aplicação de lista de tarefas utilizando:
+
+DOM
+Eventos
+localStorage
+
+🔹 Funcionalidades obrigatórias
+✅ Solicitar o nome do Usuário através de um prompt.
+✅ Validar o nome (não pode ser em branco), e após validação colocar no cabeçalho da aplicação o nome do usuário em um elemento h2
+✅ Adicionar tarefa
+✅ Exibir na tela
+✅ Remover tarefa
+✅ Salvar no localStorage
+✅ Carregar tarefas ao abrir a página
+✅ Marcar como concluída (riscar texto)
+✅ Tema escuro salvo no localStorage -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="app">
+
+  <h1 id="nomeUsuario"></h1>
+  <header>
+    
+    <h1> Minhas Tarefas</h1>
+    <button id="tema"><i class="fa-solid fa-moon"></i></button>
+  </header>
+
+  <div class="input-area">
+    <input type="text" id="inputTarefa" placeholder="Digite uma tarefa...">
+    <button id="btnAdicionar">Adicionar</button>
+  </div>
+
+  <div class="filtros">
+    <button id="todas">Todas</button>
+    <button id="pendentes">Pendentes</button>
+    <button id="concluidas">Concluídas</button>
+  </div>
+
+  <ul id="lista"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
