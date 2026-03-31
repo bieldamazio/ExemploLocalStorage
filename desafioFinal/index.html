@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section id="login-section" class="app">
+<header>
+    <h1>Login</h1>
+</header>
+
+  <div class="input-area">
+    <input type="text" id="username" placeholder="Usuário">
+  </div>
+
+  <div class="input-area">
+    <input type="password" id="password" placeholder="Senha">
+  </div>
+
+  <button id="login-btn">Acessar</button>
+
+</section>
+<section id="app-section" class="app hidden">
+
+  <header>
+    <h2 id="user-name"></h2>
+    <button id="logout-btn">Voltar</button>
+  </header>
+
+  <h1>Meu Carrinho</h1>
+
+  <div class="input-area">
+    <input type="text" id="produto-nome" placeholder="Nome do produto">
+    <input type="number" id="produto-preco" placeholder="Preço">
+    <button id="add-produto">Adicionar</button>
+  </div>
+
+  <ul id="lista-produtos"></ul>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
